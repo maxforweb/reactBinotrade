@@ -1,0 +1,192 @@
+header {
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    z-index: 3;
+
+    .logo {
+        width: 30%;
+        justify-content: space-around;
+        align-items: center;
+        padding-left: 20px;
+        font-size: 16pt;
+
+        .custom {
+            height: 40px;
+            width: 25%;
+                
+            button {
+                position: relative;
+                top: 0;
+                color: #fff;
+                font-weight: bold;
+            }
+
+            .container {
+                margin: 0;
+                flex-direction: column;
+                justify-content: center;
+                position: relative;
+                top: 15px;
+                right: -5px;
+                color: #1D2945;
+
+            }
+           
+            p{
+                background-color: initial;
+                border: 1px solid #fff;
+                width: 50px;
+                font-size: 13pt;
+                font-weight: 400;
+                text-align: center;
+            }
+            p:hover {
+                cursor: pointer;
+                background-color: #fff;
+                color: rgb(16, 142, 216);
+            }
+        }
+    }
+
+    nav {
+        font-size: 13pt;
+        width: 40%;
+        justify-content: space-around;
+        align-items: center;
+        
+        a {
+            transition: all .5s ease;
+        }
+
+        a:nth-child(2)::after {
+            content: "";
+            border-right: 1px solid blue;
+            padding-right: 10px;
+        }
+
+        a:nth-child(4){
+            padding: 5px;
+            border-radius: 10px;
+            border: 1px solid #fff;
+        }
+
+        a:hover {
+            color: #1D2945;
+        }
+
+    }
+
+    #burger {
+        display: none;
+    }
+
+    @media ( max-width: 1100px ){
+        nav{
+            width: 55%;
+        }
+    }
+
+    @media (max-width: 800px) {
+
+        height: 130px;
+    
+        .logo {
+            width: 35%;
+
+            .custom{
+                flex-wrap: nowrap;
+
+                .container{
+                    flex-wrap: nowrap;
+                }
+            }
+        }
+
+        nav {
+            flex-direction: column;
+            align-items: flex-end;
+            height: 100%;
+            margin-top: -300px;
+            transition: margin-top .8s ease;
+
+            a:nth-child(2)::after {
+                display: none;
+            }
+
+            a:nth-child(2), a:first-child {
+                margin-top: 0;
+                border-bottom: 1px solid #fff;
+            }
+        }
+        .menu-active {
+            margin-top: 0;
+        }
+
+        #burger {
+            display: block;
+            width: 30px;
+            margin-right: 10px;
+            margin-top: 50px;
+            border-top: 5px solid #fff; 
+            height: 30px;
+            cursor: pointer;;
+            position: relative;
+        }
+
+        span::before, span::after {
+            display: block;
+            content: "";
+            width: 30px;
+            border-top: 5px solid #fff;
+            margin-right: 10px;
+            transition: all .7s ease;
+            position: relative;
+        }
+
+        span::before {
+            transform: translateY(-15px);
+        }
+
+        .rotate {
+            transform: rotate(45deg);
+            right: 10px;
+        }
+        
+        .rotate span::before {
+            transform: translateY(-5px);
+        }
+
+        .rotate span::after {
+            transform: rotate(90deg);
+            bottom: 9px;
+        }
+    
+    }
+
+    @media screen and (max-width: 500px) {
+    
+        .logo {
+            width: 31%;
+            align-items: flex-start;
+            flex-direction: column;
+            justify-content: flex-start;
+
+            div {
+                width: 110%;
+            }
+        }
+        nav {
+            padding-right: 10px;
+            width: 30%;
+        }
+
+        .menu_active {
+            margin-top: 20px;
+        }
+
+        #burger {
+            margin-top: 15px;
+        }
+    }
+}

@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+ul, li, div, body, main, section, aside, article, header, footer, nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+button {
+  border: none;
+  background-color: initial;
+  cursor: pointer;
+}
+
+a[href], li {
+  text-decoration: none;
+  color: #fff;
+}
+
+#root {
+  width: 100%;
+}
+
+.app-container {
+  width: 100%;
+}
+
+.mainThird {
+  width: 80%;
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainThird div {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 30px;
+}
+
+.mainThird div img {
+  width: 17%;
+  margin-right: 40px;
+}
+
+@media (max-width: 800px) {
+  .mainThird {
+    width: 90%;
+  }
+  .mainThird div img {
+    width: 20%;
+  }
+}
+
+@media (max-width: 500px) {
+  .mainThird div img {
+    width: 30%;
+  }
+}
+/*# sourceMappingURL=App.css.map */

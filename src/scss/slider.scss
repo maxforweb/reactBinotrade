@@ -1,0 +1,50 @@
+.slider {
+
+    width: 100%;
+    margin-top:10%;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+        #sliderContent {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            flex-wrap: nowrap;
+            align-items: flex-start;
+            justify-content: flex-start;
+            transition: all .5s ease;
+            
+            .content {
+                min-width: 100%;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+                
+                div {
+                    flex-direction: column;
+                    width: 40%;
+                }
+
+            }
+        
+
+    }
+
+    #sliderButton{
+        width: 90%;
+        justify-content: space-around;
+
+        p {
+            color: #000;
+            cursor: pointer;
+        }
+        
+        .activeSlide {
+            color: #2E73FF;
+            border-bottom: 1px solid #2E73FF; 
+        }
+    }
+}

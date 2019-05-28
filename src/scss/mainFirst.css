@@ -1,0 +1,96 @@
+.mainFirst > div:first-child {
+  width: 100%;
+  height: 125%;
+  background-image: url("../assets/bacground1.0.svg");
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: cover;
+  right: 0;
+  z-index: 1;
+}
+
+.mainFirst {
+  width: 100%;
+  height: 120vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: linear-gradient(342.39deg, #1ACBFD 10.97%, #345AFF 94.68%);
+}
+
+.mainFirst .start {
+  z-index: 2;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 200px;
+  color: #fff;
+}
+
+.mainFirst .start h1 {
+  text-align: center;
+  font-size: 40pt;
+  width: 50%;
+  font-weight: normal;
+}
+
+.mainFirst .start p {
+  padding: 30px;
+}
+
+.mainFirst .start button {
+  padding: 23px 70px;
+  background-color: #00f9ff;
+  border: 1px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 15pt;
+}
+
+.mainFirst .description {
+  width: 85%;
+  z-index: 2;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  position: relative;
+  top: 200px;
+  -webkit-box-shadow: 0px 11px 20px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 11px 20px 0px rgba(0, 0, 0, 0.3);
+}
+
+.mainFirst .description div {
+  width: 50%;
+  height: 200px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainFirst .description div img {
+  width: 20%;
+}
+
+.mainFirst .description div span {
+  width: 50%;
+  padding-left: 25px;
+}
+/*# sourceMappingURL=mainFirst.css.map */
