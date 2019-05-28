@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import Images from './images';
+import '../../scss/mainThird.css'
 
 class MainThird extends Component {
     render(){

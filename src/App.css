@@ -42,46 +42,4 @@ a[href], li {
 .app-container {
   width: 100%;
 }
-
-.mainThird {
-  width: 80%;
-  margin: 0 auto;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.mainThird div {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 30px;
-}
-
-.mainThird div img {
-  width: 17%;
-  margin-right: 40px;
-}
-
-@media (max-width: 800px) {
-  .mainThird {
-    width: 90%;
-  }
-  .mainThird div img {
-    width: 20%;
-  }
-}
-
-@media (max-width: 500px) {
-  .mainThird div img {
-    width: 30%;
-  }
-}
 /*# sourceMappingURL=App.css.map */
