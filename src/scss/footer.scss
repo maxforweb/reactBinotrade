@@ -1,0 +1,36 @@
+footer {
+    width: 100%;
+    margin-top: 200px;
+    justify-content: space-around;
+    height: 20vh;
+
+    div {
+        flex-direction: column;
+
+        a[href] {
+            color: #1D2945;
+        }
+
+        img {
+            padding-top: 20px;
+        }
+    }
+
+    .social {
+        
+        img {
+            width: 40px;
+        }
+    }
+    @media (max-width: 500px) {
+        height: 100vh;
+        align-items: center;
+        flex-direction: column;
+        
+        .social {
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-around;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.mainFifth {
+  margin-top: 100px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.mainFifth h1 {
+  font-size: 25pt;
+  margin: 0 auto;
+  color: #1E2946;
+}
+
+.mainFifth p {
+  margin-top: 20px;
+  width: 40%;
+}
+/*# sourceMappingURL=mainFifth.css.map */
