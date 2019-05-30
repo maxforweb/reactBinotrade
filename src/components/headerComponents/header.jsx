@@ -4,10 +4,11 @@ import Burger from './burger';
 import Select from './select';
 import Nav from './nav';
 import '../../scss/header.css';
+import {NavLink} from 'react-router-dom';
 
 const menu = [
     {
-        link: '/trade',
+        link: '/traders',
         label: 'Трейдерам'
     },
     {
@@ -32,7 +33,7 @@ const Header = ()=> {
             <div className={'logo'}> 
                 <div>
                     <img src={logo} />
-                    <a href="/">Binotrade</a>
+                    <NavLink to="/">Binotrade</NavLink>
                 </div>
                 <Select  />
             </div> 

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import {NavLink} from 'react-router-dom';
 
 
 
@@ -10,7 +10,7 @@ const Nav = (props) => {
         <nav>
             {
                 props.data.map(function(item, index){
-                    return<a key={index} href={item.link}>{item.label}</a>
+                    return <NavLink key={index} to={item.link}>{item.label}</NavLink>
                 })
             }
          </nav>
