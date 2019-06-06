@@ -8,6 +8,7 @@ import MainThird from './components/mainThird/mainThird.jsx';
 import MainFourth from './components/mainfourth/mainFourth.jsx';
 import MainFifth from './components/mainFifth/mainFifth.jsx';
 import Footer from './components/footer/footer.jsx';
+import Registration from './components/registration/regictration.jsx';
 
 
 
@@ -26,6 +27,7 @@ function App() {
         <Route path="/about" component = {MainThird}/>
         <Route path="/about" component = {MainFourth}/>
         <Route path="/about" component = {MainFifth}/>
+        <Route path="/sign-up" component={Registration} />
         <Footer />
       </div>
     </BrowserRouter>

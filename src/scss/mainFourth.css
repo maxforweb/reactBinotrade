@@ -5,6 +5,8 @@
   margin-top: 210px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 .mainFourth .mobile {
@@ -29,6 +31,7 @@
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
   width: 60%;
+  overflow: hidden;
 }
 
 .mainFourth .phones img {
@@ -87,7 +90,7 @@
   }
 }
 
-@media (max-width: 400px), (max-height: 700px) {
+@media (max-width: 400px), (max-height: 600px) {
   .mainFourth .mobile {
     width: 55%;
     margin-top: 32px;

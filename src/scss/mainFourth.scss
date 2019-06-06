@@ -1,9 +1,10 @@
 .mainFourth {
     width: 100%;
-   background-image: url('../assets/background2.svg');
-   background-repeat: no-repeat;
-   margin-top: 210px;
-   justify-content: space-around;
+    background-image: url('../assets/background2.svg');
+    background-repeat: no-repeat;
+    margin-top: 210px;
+    justify-content: space-around;
+    flex-wrap: nowrap;
 
    .mobile {
        width: 35%;
@@ -24,7 +25,8 @@
        justify-content: flex-start;
        flex-wrap: nowrap;
        width: 60%;
-
+       overflow: hidden;
+       
        img {
            position: relative;
            bottom: 60px;
@@ -83,7 +85,7 @@
             }
         }
     }
-    @media (max-width: 400px), (max-height: 700px) {
+    @media (max-width: 400px), (max-height: 600px) {
         .mobile {
             width: 55%;
             margin-top: 32px;

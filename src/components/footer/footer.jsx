@@ -35,7 +35,7 @@ const Footer = () =>{
             <img src={app1} alt="App Link"/>
             <img src={app2} alt="App Link"/>
         </div>
-        <div class="social">
+        <div className={"social"}>
             <img src={social1} alt="1"/>
             <img src={social2} alt="2"/>
             <img src={social3} alt="3"/>

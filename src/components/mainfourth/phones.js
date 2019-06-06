@@ -6,7 +6,7 @@ const Phones = (props) => {
         <div className={'phones'}>
             {
                 props.data.map(function(item, index){
-                    return <img src={item.src} alt="phones" />
+                    return <img src={item.src} key={index} alt="phones" />
                 })
             }
         </div>
